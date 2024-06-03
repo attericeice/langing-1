@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ramabhadra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+     <div class="header__container container">
+      <div class="header__logo">
+        <a href="/"><img src="../assets/images/logo.svg" alt="logo"></a>
+       </div>
+       <button aria-label="Открыть меню навигации" class="icon__button menu__button">
+      <img src="../assets/images/menu.svg" alt="menu">
+       </button>
+       <nav aria-label="Основная" class="header__links">
+        <ul class="header__nav-list">
+          <li class="nav__list-item"><a href="#">Home</a></li>
+          <li class="nav__list-item"><a href="#">Classes</a></li>
+          <li class="nav__list-item"><a href="#">Shop</a></li>
+          <li class="nav__list-item"><a href="#">My Courses</a></li>
+          <li class="nav__list-item"><a href="#">Pricing</a></li>
+          <li class="nav__list-item"><a href="#">Contact</a></li>
+        </ul>
+       </nav>
+       <div class="header__menu">
+        <button class="icon__button basket__button">
+          <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03814 7.84139L5.8096 17.017C5.86589 17.7232 6.44289 18.2529 7.14782 18.2529H7.15294H21.1121H21.1147C21.7812 18.2529 22.3506 17.7565 22.4452 17.0976L23.6606 8.70624C23.6888 8.50666 23.6389 8.30708 23.5173 8.14588C23.3971 7.9834 23.2205 7.87849 23.0209 7.85035C22.7536 7.86058 11.6576 7.84523 5.03814 7.84139ZM7.1452 20.172C5.46028 20.172 4.03378 18.8568 3.89689 17.1744L2.72499 3.23696L0.796976 2.90432C0.273715 2.81221 -0.0755531 2.31709 0.0140028 1.79383C0.106117 1.27057 0.611468 0.930258 1.12322 1.01214L3.7843 1.47271C4.21289 1.54819 4.53913 1.90386 4.57623 2.33884L4.87688 5.92235C23.1412 5.93003 23.2 5.93899 23.2883 5.94922C24.0009 6.05285 24.6278 6.42515 25.0551 6.9983C25.4824 7.57018 25.6615 8.27511 25.5592 8.98133L24.345 17.3714C24.116 18.9681 22.7292 20.172 21.1172 20.172H21.1108H7.15544H7.1452Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0598 12.5704H15.5134C14.9825 12.5704 14.5539 12.1406 14.5539 11.6109C14.5539 11.0812 14.9825 10.6514 15.5134 10.6514H19.0598C19.5895 10.6514 20.0194 11.0812 20.0194 11.6109C20.0194 12.1406 19.5895 12.5704 19.0598 12.5704Z" fill="#48B84A"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.59484 23.6475C6.97993 23.6475 7.29082 23.9583 7.29082 24.3434C7.29082 24.7285 6.97993 25.0407 6.59484 25.0407C6.20847 25.0407 5.89758 24.7285 5.89758 24.3434C5.89758 23.9583 6.20847 23.6475 6.59484 23.6475Z" fill="white"/>
+            <mask id="mask0_19_47" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="23" width="3" height="3">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.89691 24.3429C5.89691 24.7293 6.2078 25.0415 6.59545 25.0415C6.98054 25.0415 7.29142 24.7293 7.29142 24.3429C7.29142 23.9579 6.98054 23.647 6.59545 23.647C6.2078 23.647 5.89691 23.9579 5.89691 24.3429Z" fill="white"/>
+            </mask>
+            <g mask="url(#mask0_19_47)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.498718 31.4369H13.6882V17.25H-0.498718V31.4369Z" fill="white"/>
+            </g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.59367 24.0807C6.4491 24.0807 6.3314 24.1984 6.3314 24.343C6.3314 24.6334 6.85722 24.6334 6.85722 24.343C6.85722 24.1984 6.73824 24.0807 6.59367 24.0807ZM6.59355 25.9998C5.68008 25.9998 4.93805 25.2565 4.93805 24.343C4.93805 23.4295 5.68008 22.6875 6.59355 22.6875C7.50702 22.6875 8.25033 23.4295 8.25033 24.343C8.25033 25.2565 7.50702 25.9998 6.59355 25.9998Z" fill="#48B84A"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0265 23.647C21.4116 23.647 21.7237 23.9579 21.7237 24.3429C21.7237 24.728 21.4116 25.0402 21.0265 25.0402C20.6401 25.0402 20.3292 24.728 20.3292 24.3429C20.3292 23.9579 20.6401 23.647 21.0265 23.647Z" fill="white"/>
+            <mask id="mask1_19_47" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="23" width="2" height="3">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3295 24.3429C20.3295 24.7293 20.6404 25.0415 21.0268 25.0415C21.4106 25.0415 21.724 24.7293 21.724 24.3429C21.724 23.9579 21.4106 23.647 21.0268 23.647C20.6404 23.647 20.3295 23.9579 20.3295 24.3429Z" fill="white"/>
+            </mask>
+            <g mask="url(#mask1_19_47)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9327 31.4369H28.1209V17.25H13.9327V31.4369Z" fill="white"/>
+            </g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0253 24.0807C20.882 24.0807 20.7643 24.1984 20.7643 24.343C20.7656 24.6359 21.2901 24.6334 21.2888 24.343C21.2888 24.1984 21.1698 24.0807 21.0253 24.0807ZM21.0252 25.9998C20.1117 25.9998 19.3697 25.2565 19.3697 24.343C19.3697 23.4295 20.1117 22.6875 21.0252 22.6875C21.9399 22.6875 22.6833 23.4295 22.6833 24.343C22.6833 25.2565 21.9399 25.9998 21.0252 25.9998Z" fill="#48B84A"/>
+            <circle cx="24" cy="7" r="6" fill="#FF0033"/>
+            <path d="M22.3901 5.29V3.7H25.1601V11H23.3801V5.29H22.3901Z" fill="white"/>
+            </svg>            
+        </button>
+        <div class="user__menu">
+          <img src="../assets/images/avatar.png" alt="user">
+          <button class="icon__button user__button">
+            <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.5 8L0.571797 0.5L14.4282 0.500001L7.5 8Z" fill="white"/>
+              </svg>              
+          </button>
+          <div class="user__submenu">
+          <ul aria-hidden="true" aria-label="Меню пользователя" class="user__submenu-list">
+           <li class="submenu__list-item">
+            <a aria-label="Перейти в профиль" href="#">
+              Profile
+            </a>
+           </li>
+           <li class="submenu__list-item mobile-basket">
+            <a aria-hidden="true" aria-label="Перейти в корзину" href="#">
+              Basket
+              <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03814 7.84139L5.8096 17.017C5.86589 17.7232 6.44289 18.2529 7.14782 18.2529H7.15294H21.1121H21.1147C21.7812 18.2529 22.3506 17.7565 22.4452 17.0976L23.6606 8.70624C23.6888 8.50666 23.6389 8.30708 23.5173 8.14588C23.3971 7.9834 23.2205 7.87849 23.0209 7.85035C22.7536 7.86058 11.6576 7.84523 5.03814 7.84139ZM7.1452 20.172C5.46028 20.172 4.03378 18.8568 3.89689 17.1744L2.72499 3.23696L0.796976 2.90432C0.273715 2.81221 -0.0755531 2.31709 0.0140028 1.79383C0.106117 1.27057 0.611468 0.930258 1.12322 1.01214L3.7843 1.47271C4.21289 1.54819 4.53913 1.90386 4.57623 2.33884L4.87688 5.92235C23.1412 5.93003 23.2 5.93899 23.2883 5.94922C24.0009 6.05285 24.6278 6.42515 25.0551 6.9983C25.4824 7.57018 25.6615 8.27511 25.5592 8.98133L24.345 17.3714C24.116 18.9681 22.7292 20.172 21.1172 20.172H21.1108H7.15544H7.1452Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0598 12.5704H15.5134C14.9825 12.5704 14.5539 12.1406 14.5539 11.6109C14.5539 11.0812 14.9825 10.6514 15.5134 10.6514H19.0598C19.5895 10.6514 20.0194 11.0812 20.0194 11.6109C20.0194 12.1406 19.5895 12.5704 19.0598 12.5704Z" fill="#48B84A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.59484 23.6475C6.97993 23.6475 7.29082 23.9583 7.29082 24.3434C7.29082 24.7285 6.97993 25.0407 6.59484 25.0407C6.20847 25.0407 5.89758 24.7285 5.89758 24.3434C5.89758 23.9583 6.20847 23.6475 6.59484 23.6475Z" fill="white"/>
+                <mask id="mask0_19_47" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="23" width="3" height="3">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.89691 24.3429C5.89691 24.7293 6.2078 25.0415 6.59545 25.0415C6.98054 25.0415 7.29142 24.7293 7.29142 24.3429C7.29142 23.9579 6.98054 23.647 6.59545 23.647C6.2078 23.647 5.89691 23.9579 5.89691 24.3429Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask0_19_47)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.498718 31.4369H13.6882V17.25H-0.498718V31.4369Z" fill="white"/>
+                </g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.59367 24.0807C6.4491 24.0807 6.3314 24.1984 6.3314 24.343C6.3314 24.6334 6.85722 24.6334 6.85722 24.343C6.85722 24.1984 6.73824 24.0807 6.59367 24.0807ZM6.59355 25.9998C5.68008 25.9998 4.93805 25.2565 4.93805 24.343C4.93805 23.4295 5.68008 22.6875 6.59355 22.6875C7.50702 22.6875 8.25033 23.4295 8.25033 24.343C8.25033 25.2565 7.50702 25.9998 6.59355 25.9998Z" fill="#48B84A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0265 23.647C21.4116 23.647 21.7237 23.9579 21.7237 24.3429C21.7237 24.728 21.4116 25.0402 21.0265 25.0402C20.6401 25.0402 20.3292 24.728 20.3292 24.3429C20.3292 23.9579 20.6401 23.647 21.0265 23.647Z" fill="white"/>
+                <mask id="mask1_19_47" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="23" width="2" height="3">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3295 24.3429C20.3295 24.7293 20.6404 25.0415 21.0268 25.0415C21.4106 25.0415 21.724 24.7293 21.724 24.3429C21.724 23.9579 21.4106 23.647 21.0268 23.647C20.6404 23.647 20.3295 23.9579 20.3295 24.3429Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask1_19_47)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9327 31.4369H28.1209V17.25H13.9327V31.4369Z" fill="white"/>
+                </g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0253 24.0807C20.882 24.0807 20.7643 24.1984 20.7643 24.343C20.7656 24.6359 21.2901 24.6334 21.2888 24.343C21.2888 24.1984 21.1698 24.0807 21.0253 24.0807ZM21.0252 25.9998C20.1117 25.9998 19.3697 25.2565 19.3697 24.343C19.3697 23.4295 20.1117 22.6875 21.0252 22.6875C21.9399 22.6875 22.6833 23.4295 22.6833 24.343C22.6833 25.2565 21.9399 25.9998 21.0252 25.9998Z" fill="#48B84A"/>
+                <circle cx="24" cy="7" r="6" fill="#FF0033"/>
+                <path d="M22.3901 5.29V3.7H25.1601V11H23.3801V5.29H22.3901Z" fill="white"/>
+                </svg>            
+            </a>
+           </li>
+           <li class="submenu__list-item">
+            <a aria-label="Перейти в профиль" href="#">
+              Quit
+            </a>
+           </li>
+          </ul>
+          </div>
+        </div>
+       </div>
+     </div>
+    </header>
+    <main>
+      <section class="main__header container">
+        <div class="main__header-title">
+          <h1 class="big__title header__title-text">
+            The ultimate Online personal <b>Traning plans</b>
+          </h1>
+          <div class="circular__poster">
+            <div class="circular__poster-big">
+             <div class="poster__big-inner">
+              <p>get more benefit by joining Membership</p>
+             </div>
+            </div>
+            <div class="circular__poster-low">
+             <span>PLUS</span>
+            </div>
+          </div>
+        </div>
+        <p class="main__header-subtitle">
+          Use our diverse media library to create the yoga ritual that suits you. Moved or relaxed, flexible and individual - just your yoga.
+        </p>
+        <div class="main__header-footer">
+          <div class="header__footer-text">
+            <h2 class="footer__text-title">We're here for you</h2>
+            <p class="footer__text-subtitle">Choose the right one from our constantly growing media library. Whenever you want. Where you want.</p>
+            <div class="footer__text-buttons">
+              <button class="icon__btn arrow-left">
+                <svg width="32" height="17" viewBox="0 0 32 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M8.08726 0.916142C8.2203 0.971349 8.34115 1.05226 8.44287 1.15424C8.54485 1.25597 8.62576 1.37681 8.68097 1.50985C8.73618 1.64289 8.76459 1.78552 8.76459 1.92956C8.76459 2.0736 8.73618 2.21623 8.68097 2.34927C8.62576 2.48231 8.54485 2.60316 8.44287 2.70488L3.74102 7.40496H30.6348C30.9252 7.40496 31.2037 7.52033 31.4091 7.7257C31.6145 7.93107 31.7299 8.20961 31.7299 8.50004C31.7299 8.79048 31.6145 9.06902 31.4091 9.27438C31.2037 9.47975 30.9252 9.59513 30.6348 9.59513H3.74096L8.44287 14.2953C8.6485 14.5009 8.76402 14.7798 8.76402 15.0706C8.76402 15.3614 8.6485 15.6403 8.44287 15.8459C8.23724 16.0515 7.95835 16.1671 7.66755 16.1671C7.37675 16.1671 7.09786 16.0515 6.89223 15.8459L0.321716 9.2754C0.219736 9.17367 0.138824 9.05283 0.0836182 8.91978C0.0284119 8.78674 -5.72205e-06 8.64412 -5.72205e-06 8.50008C-5.72205e-06 8.35603 0.0284119 8.21341 0.0836182 8.08036C0.138824 7.94732 0.219736 7.82648 0.321716 7.72475L6.89223 1.15424C6.99395 1.05226 7.1148 0.971349 7.24784 0.916142C7.38088 0.860936 7.52351 0.83252 7.66755 0.83252C7.81159 0.83252 7.95422 0.860936 8.08726 0.916142Z" fill="#48B84A"/>
+                  </svg>                  
+              </button>
+              <button class="icon__btn arrow-right">
+                <svg width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M32.2745 0.13633C32.0576 0.226334 31.8606 0.358244 31.6947 0.524505C31.5285 0.690347 31.3966 0.887359 31.3066 1.10426C31.2166 1.32116 31.1702 1.55368 31.1702 1.78852C31.1702 2.02335 31.2166 2.25587 31.3066 2.47277C31.3966 2.68967 31.5285 2.88669 31.6947 3.05253L39.3602 10.7151H2.51531C2.04181 10.7151 1.5877 10.9032 1.25289 11.238C0.918077 11.5728 0.72998 12.0269 0.72998 12.5004C0.72998 12.9739 0.918077 13.4281 1.25289 13.7629C1.5877 14.0977 2.04181 14.2858 2.51531 14.2858H39.3603L31.6947 21.9484C31.3595 22.2836 31.1712 22.7383 31.1712 23.2124C31.1712 23.6865 31.3595 24.1412 31.6947 24.4764C32.03 24.8117 32.4846 25 32.9587 25C33.4328 25 33.8875 24.8117 34.2228 24.4764L44.9347 13.7645C45.101 13.5986 45.2329 13.4016 45.3229 13.1847C45.4129 12.9678 45.4592 12.7353 45.4592 12.5005C45.4592 12.2656 45.4129 12.0331 45.3229 11.8162C45.2329 11.5993 45.101 11.4023 44.9347 11.2365L34.2228 0.524505C34.0569 0.358244 33.8599 0.226334 33.643 0.13633C33.4261 0.046327 33.1936 0 32.9587 0C32.7239 0 32.4914 0.046327 32.2745 0.13633Z" fill="#48B84A"/>
+                  </svg>
+              </button>
+            </div>
+          </div>
+          <div class="yoga">
+            <div class="yoga__message">
+              <img src="../assets/images/messageAvatar.png" alt="girl">
+              <div class="yoga__message-text">
+                <p>Hello guys 👋
+                  <br>
+                  Let's start a total body
+                  strength workout. Keep Spirit!</p>
+              </div>
+            </div>
+            <div class="yoga__image">
+              <img src="../assets/images/yougaBG.png" alt="yoga">
+            </div>
+            <div class="yoga__collage">
+              <img src="../assets/images/collage1.png" alt="collage1">
+              <img src="../assets/images/collage2.png" alt="collage2">
+              <img src="../assets/images/collage3.png" alt="collage3">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="teachers">
+        <h1 class="teachers__title big__title">our teachers</h1>
+        <div class="teachers__slide-list">
+        </div>
+        <div class="teachers__buttons slider__buttons">
+          <button class="teachers__buttons-prev">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.9999 9.90002C21.9999 10.4537 21.6579 10.9114 21.2142 10.9838L21.0908 10.9938L2.90901 10.9938C2.40693 10.9938 1.99992 10.5041 1.99992 9.90002C1.99992 9.3463 2.34192 8.88868 2.78565 8.81626L2.90901 8.80627L21.0908 8.80627C21.5929 8.80627 21.9999 9.29596 21.9999 9.90002Z" fill="#626262"/>
+              <path d="M10.7923 17.9105C11.2203 18.3368 11.2218 19.0293 10.7956 19.4573C10.4081 19.8465 9.80057 19.8831 9.37171 19.5663L9.24881 19.4607L0.42589 10.6757C0.0355864 10.287 8.01086e-05 9.67728 0.319388 9.24843L0.425826 9.1256L9.24874 0.339138C9.67676 -0.0871126 10.3693 -0.0856788 10.7955 0.342341C11.183 0.731449 11.2171 1.33916 10.8985 1.76668L10.7923 1.88913L2.74812 9.90103L10.7923 17.9105Z" fill="#626262"/>
+              </svg>
+          </button>
+          <div class="teachers__current-slide">
+            <span class="teachers__current">1</span>
+            <span class="teachers__slash">/</span>
+            <span class="teachers__all">5</span>
+          </div>
+          <button class="teachers__buttons-next">
+            <svg class="arrow-left" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <style type="text/css">
+                .teachers__buttons-next .arrow-left{
+                  transform: rotate(180deg);
+                }
+              </style>
+              <path d="M21.9999 9.90002C21.9999 10.4537 21.6579 10.9114 21.2142 10.9838L21.0908 10.9938L2.90901 10.9938C2.40693 10.9938 1.99992 10.5041 1.99992 9.90002C1.99992 9.3463 2.34192 8.88868 2.78565 8.81626L2.90901 8.80627L21.0908 8.80627C21.5929 8.80627 21.9999 9.29596 21.9999 9.90002Z" fill="#626262"/>
+              <path d="M10.7923 17.9105C11.2203 18.3368 11.2218 19.0293 10.7956 19.4573C10.4081 19.8465 9.80057 19.8831 9.37171 19.5663L9.24881 19.4607L0.42589 10.6757C0.0355864 10.287 8.01086e-05 9.67728 0.319388 9.24843L0.425826 9.1256L9.24874 0.339138C9.67676 -0.0871126 10.3693 -0.0856788 10.7955 0.342341C11.183 0.731449 11.2171 1.33916 10.8985 1.76668L10.7923 1.88913L2.74812 9.90103L10.7923 17.9105Z" fill="#626262"/>
+              </svg>
+          </button>
+        </div>
+      </section>
+      <section class="about container">
+      <div class="about__container">
+        <div class="about__text">
+          <h1 class="about__title big__title">why us?</h1>
+          <p class="about__subtitle">
+            The International Sivananda Yoga Vedanta Centres is a non-profit organization named after Swami Sivananda, one of the most influential spiritual teachers of the 20th century and founded by his disciple Swami Vishnudevananda.
+          </p>
+          <p class="about__subtitle">
+            The mission – to spread peace, health and joy through yoga. All are welcome to come to our ashrams and centres to learn not only about how yoga can help maintain a healthy body but also how yogic philosophy, applied in daily life, can help maintain a peaceful mind and spirit.
+          </p>
+          <p class="about__subtitle">
+            In 1957, Swami Vishnudevananda on instructions from his guru, Swami Sivananda, came to the West to bring the teachings of yoga. He established the first Sivananda Yoga Vedanta centre in Montreal, Canada, in 1959 and to date there are close to 60 Sivananda locations (ashrams, yoga centres and affiliated centres) around the world. Over 26,000 teachers have been trained in the TTC programs.
+          </p>
+          <p class="about__subtitle">
+            The Sivananda Yoga Vedanta Ashrams and Centres are recognized worldwide for teaching yoga authentically, preserving its purity and tradition dating back several thousand years. They also offer a wide range of programs and even the possibility for spiritual growth through Karma yoga as a temporary or full time staff program participant.
+          </p>
+          <a class="about__link button__link" href="#">More 
+            <svg width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M32.2745 0.13633C32.0576 0.226334 31.8606 0.358244 31.6947 0.524505C31.5285 0.690347 31.3966 0.887359 31.3066 1.10426C31.2166 1.32116 31.1702 1.55368 31.1702 1.78852C31.1702 2.02335 31.2166 2.25587 31.3066 2.47277C31.3966 2.68967 31.5285 2.88669 31.6947 3.05253L39.3602 10.7151H2.51531C2.04181 10.7151 1.5877 10.9032 1.25289 11.238C0.918077 11.5728 0.72998 12.0269 0.72998 12.5004C0.72998 12.9739 0.918077 13.4281 1.25289 13.7629C1.5877 14.0977 2.04181 14.2858 2.51531 14.2858H39.3603L31.6947 21.9484C31.3595 22.2836 31.1712 22.7383 31.1712 23.2124C31.1712 23.6865 31.3595 24.1412 31.6947 24.4764C32.03 24.8117 32.4846 25 32.9587 25C33.4328 25 33.8875 24.8117 34.2228 24.4764L44.9347 13.7645C45.101 13.5986 45.2329 13.4016 45.3229 13.1847C45.4129 12.9678 45.4592 12.7353 45.4592 12.5005C45.4592 12.2656 45.4129 12.0331 45.3229 11.8162C45.2329 11.5993 45.101 11.4023 44.9347 11.2365L34.2228 0.524505C34.0569 0.358244 33.8599 0.226334 33.643 0.13633C33.4261 0.046327 33.1936 0 32.9587 0C32.7239 0 32.4914 0.046327 32.2745 0.13633Z" fill="#48B84A"/>
+              </svg>
+          </a>
+        </div>
+       <div class="about__collage">
+        <div class="collage__col">
+          <img src="../assets/images/about1.png">
+          <img src="../assets/images/about2.png">
+        </div>
+        <div class="collage__col">
+          <img src="../assets/images/about3.png">
+          <img src="../assets/images/about4.png">
+        </div>
+       </div>
+      </div>
+      </section>
+      <section class="people__say container">
+       <div class="people__say-container">
+       <figure class="people__image">
+        <img src="../assets/images/peopleSay.png" />
+        <figcaption class="people__image-text-layer">
+        <span class="image__textlayer-name">Priya Bharadwaj</span>
+        <span class="image__textlayer-job">Founder, Event Management Company</span>
+        </figcaption>
+       </figure>
+       <div class="people__say-text">
+        <h1 class="people__say-title big__title">what people say about us?</h1>
+        <p class="people__say-subtitle">
+          As a marathon runner, I was looking to hire a yoga instructor to complement my running regime and to relieve running related aches and pains. Most of the trainers I found online were not up to the mark. Either they were not certified or they did not have the requisite experience to train clients with specific 
+needs such as me.
+        </p>
+          <div class="people__text-buttons">
+            <button class="icon__btn arrow-left">
+              <svg width="32" height="17" viewBox="0 0 32 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M8.08726 0.916142C8.2203 0.971349 8.34115 1.05226 8.44287 1.15424C8.54485 1.25597 8.62576 1.37681 8.68097 1.50985C8.73618 1.64289 8.76459 1.78552 8.76459 1.92956C8.76459 2.0736 8.73618 2.21623 8.68097 2.34927C8.62576 2.48231 8.54485 2.60316 8.44287 2.70488L3.74102 7.40496H30.6348C30.9252 7.40496 31.2037 7.52033 31.4091 7.7257C31.6145 7.93107 31.7299 8.20961 31.7299 8.50004C31.7299 8.79048 31.6145 9.06902 31.4091 9.27438C31.2037 9.47975 30.9252 9.59513 30.6348 9.59513H3.74096L8.44287 14.2953C8.6485 14.5009 8.76402 14.7798 8.76402 15.0706C8.76402 15.3614 8.6485 15.6403 8.44287 15.8459C8.23724 16.0515 7.95835 16.1671 7.66755 16.1671C7.37675 16.1671 7.09786 16.0515 6.89223 15.8459L0.321716 9.2754C0.219736 9.17367 0.138824 9.05283 0.0836182 8.91978C0.0284119 8.78674 -5.72205e-06 8.64412 -5.72205e-06 8.50008C-5.72205e-06 8.35603 0.0284119 8.21341 0.0836182 8.08036C0.138824 7.94732 0.219736 7.82648 0.321716 7.72475L6.89223 1.15424C6.99395 1.05226 7.1148 0.971349 7.24784 0.916142C7.38088 0.860936 7.52351 0.83252 7.66755 0.83252C7.81159 0.83252 7.95422 0.860936 8.08726 0.916142Z" fill="#48B84A"/>
+                </svg>                  
+            </button>
+            <button class="icon__btn arrow-right">
+              <svg width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.2745 0.13633C32.0576 0.226334 31.8606 0.358244 31.6947 0.524505C31.5285 0.690347 31.3966 0.887359 31.3066 1.10426C31.2166 1.32116 31.1702 1.55368 31.1702 1.78852C31.1702 2.02335 31.2166 2.25587 31.3066 2.47277C31.3966 2.68967 31.5285 2.88669 31.6947 3.05253L39.3602 10.7151H2.51531C2.04181 10.7151 1.5877 10.9032 1.25289 11.238C0.918077 11.5728 0.72998 12.0269 0.72998 12.5004C0.72998 12.9739 0.918077 13.4281 1.25289 13.7629C1.5877 14.0977 2.04181 14.2858 2.51531 14.2858H39.3603L31.6947 21.9484C31.3595 22.2836 31.1712 22.7383 31.1712 23.2124C31.1712 23.6865 31.3595 24.1412 31.6947 24.4764C32.03 24.8117 32.4846 25 32.9587 25C33.4328 25 33.8875 24.8117 34.2228 24.4764L44.9347 13.7645C45.101 13.5986 45.2329 13.4016 45.3229 13.1847C45.4129 12.9678 45.4592 12.7353 45.4592 12.5005C45.4592 12.2656 45.4129 12.0331 45.3229 11.8162C45.2329 11.5993 45.101 11.4023 44.9347 11.2365L34.2228 0.524505C34.0569 0.358244 33.8599 0.226334 33.643 0.13633C33.4261 0.046327 33.1936 0 32.9587 0C32.7239 0 32.4914 0.046327 32.2745 0.13633Z" fill="#48B84A"/>
+                </svg>
+            </button>
+       </div>
+      </section>
+      <section class="workshops container">
+        <div class="workshops__container">
+          <h1 class="workshops__title big__title">workshops</h1>
+          <div class="workshops__cards">
+            <div class="workshops__card-item current">
+              <time class="card__item-datelabel">
+                JUL, 25 2021 15:38
+              </time>
+              <div class="card__item-rank">
+                <span>beginner</span>
+              </div>
+              <img src="../assets/images/workshop1.png" />
+             <div class="card__item-content">
+              <div class="card__item-text">
+                <h4>Yoga Beginner Headstart</h4>
+                <span>Headstart your yoga journey with namayog</span>
+              </div>
+              <div class="card__item-buttons">
+                <button class="card__item-button btn__green">Buy Now ₹</button>
+                <button class="card__item-button btn__grey">
+                  More
+                  <svg width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M32.2745 0.13633C32.0576 0.226334 31.8606 0.358244 31.6947 0.524505C31.5285 0.690347 31.3966 0.887359 31.3066 1.10426C31.2166 1.32116 31.1702 1.55368 31.1702 1.78852C31.1702 2.02335 31.2166 2.25587 31.3066 2.47277C31.3966 2.68967 31.5285 2.88669 31.6947 3.05253L39.3602 10.7151H2.51531C2.04181 10.7151 1.5877 10.9032 1.25289 11.238C0.918077 11.5728 0.72998 12.0269 0.72998 12.5004C0.72998 12.9739 0.918077 13.4281 1.25289 13.7629C1.5877 14.0977 2.04181 14.2858 2.51531 14.2858H39.3603L31.6947 21.9484C31.3595 22.2836 31.1712 22.7383 31.1712 23.2124C31.1712 23.6865 31.3595 24.1412 31.6947 24.4764C32.03 24.8117 32.4846 25 32.9587 25C33.4328 25 33.8875 24.8117 34.2228 24.4764L44.9347 13.7645C45.101 13.5986 45.2329 13.4016 45.3229 13.1847C45.4129 12.9678 45.4592 12.7353 45.4592 12.5005C45.4592 12.2656 45.4129 12.0331 45.3229 11.8162C45.2329 11.5993 45.101 11.4023 44.9347 11.2365L34.2228 0.524505C34.0569 0.358244 33.8599 0.226334 33.643 0.13633C33.4261 0.046327 33.1936 0 32.9587 0C32.7239 0 32.4914 0.046327 32.2745 0.13633Z" fill="#48B84A"/>
+                    </svg>
+                </button>
+              </div>
+             </div>
+            </div>
+            <div class="workshops__card-item">
+              <img src="../assets/images/workshop2.png" />
+              <div class="card__item-content">
+                <div class="card__item-text">
+                  <h4>Yoga Beginner Headstart</h4>
+                  <span>Headstart your yoga journey with namayog</span>
+                </div>
+                <div class="card__item-buttons">
+                  <button class="card__item-button btn__green">Buy Now ₹</button>
+                  <button class="card__item-button btn__grey">
+                    More
+                    <svg width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M32.2745 0.13633C32.0576 0.226334 31.8606 0.358244 31.6947 0.524505C31.5285 0.690347 31.3966 0.887359 31.3066 1.10426C31.2166 1.32116 31.1702 1.55368 31.1702 1.78852C31.1702 2.02335 31.2166 2.25587 31.3066 2.47277C31.3966 2.68967 31.5285 2.88669 31.6947 3.05253L39.3602 10.7151H2.51531C2.04181 10.7151 1.5877 10.9032 1.25289 11.238C0.918077 11.5728 0.72998 12.0269 0.72998 12.5004C0.72998 12.9739 0.918077 13.4281 1.25289 13.7629C1.5877 14.0977 2.04181 14.2858 2.51531 14.2858H39.3603L31.6947 21.9484C31.3595 22.2836 31.1712 22.7383 31.1712 23.2124C31.1712 23.6865 31.3595 24.1412 31.6947 24.4764C32.03 24.8117 32.4846 25 32.9587 25C33.4328 25 33.8875 24.8117 34.2228 24.4764L44.9347 13.7645C45.101 13.5986 45.2329 13.4016 45.3229 13.1847C45.4129 12.9678 45.4592 12.7353 45.4592 12.5005C45.4592 12.2656 45.4129 12.0331 45.3229 11.8162C45.2329 11.5993 45.101 11.4023 44.9347 11.2365L34.2228 0.524505C34.0569 0.358244 33.8599 0.226334 33.643 0.13633C33.4261 0.046327 33.1936 0 32.9587 0C32.7239 0 32.4914 0.046327 32.2745 0.13633Z" fill="#48B84A"/>
+                      </svg>
+                  </button>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="upcoming container">
+       <h1 class="upcoming__title big__title">upcoming classes</h1>
+       <div class="upcoming__content">
+        <div class="upcoming__text">
+          <p class="upcoming__text-content">It has been proved that getting more exercise means less risk of developing severe illness according to a recent study of physical activity & Covid-19 hospitalisations. The study which involved more than 50,000 people who had developed Covid proved that those who were the most active before falling ill were least likely to be hospitalized or die as a result of the illness. Read the New York Times article here - Being Fit can save your life.
+          </p>
+          <a href="#" class="upcoming__text-link button__link">
+            See all Classes
+            <svg width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M32.2745 0.13633C32.0576 0.226334 31.8606 0.358244 31.6947 0.524505C31.5285 0.690347 31.3966 0.887359 31.3066 1.10426C31.2166 1.32116 31.1702 1.55368 31.1702 1.78852C31.1702 2.02335 31.2166 2.25587 31.3066 2.47277C31.3966 2.68967 31.5285 2.88669 31.6947 3.05253L39.3602 10.7151H2.51531C2.04181 10.7151 1.5877 10.9032 1.25289 11.238C0.918077 11.5728 0.72998 12.0269 0.72998 12.5004C0.72998 12.9739 0.918077 13.4281 1.25289 13.7629C1.5877 14.0977 2.04181 14.2858 2.51531 14.2858H39.3603L31.6947 21.9484C31.3595 22.2836 31.1712 22.7383 31.1712 23.2124C31.1712 23.6865 31.3595 24.1412 31.6947 24.4764C32.03 24.8117 32.4846 25 32.9587 25C33.4328 25 33.8875 24.8117 34.2228 24.4764L44.9347 13.7645C45.101 13.5986 45.2329 13.4016 45.3229 13.1847C45.4129 12.9678 45.4592 12.7353 45.4592 12.5005C45.4592 12.2656 45.4129 12.0331 45.3229 11.8162C45.2329 11.5993 45.101 11.4023 44.9347 11.2365L34.2228 0.524505C34.0569 0.358244 33.8599 0.226334 33.643 0.13633C33.4261 0.046327 33.1936 0 32.9587 0C32.7239 0 32.4914 0.046327 32.2745 0.13633Z" fill="#48B84A"/>
+              </svg>
+          </a>
+        </div>
+        <div class="upcoming__poster">
+          <div class="poster__guid-time">
+            <span>1:50</span>
+          </div>
+          <div class="poster__text">
+            <h4>Simple Beginner Guide To Yoga</h4>
+            <span>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M31.7451 37.8348C30.2051 38.2898 28.3851 38.4998 26.2501 38.4998H15.7501C13.6151 38.4998 11.7951 38.2898 10.2551 37.8348C10.6401 33.2848 15.3126 29.6973 21.0001 29.6973C26.6876 29.6973 31.3601 33.2848 31.7451 37.8348Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M26.25 3.5H15.75C7 3.5 3.5 7 3.5 15.75V26.25C3.5 32.865 5.495 36.4875 10.255 37.835C10.64 33.285 15.3125 29.6974 21 29.6974C26.6875 29.6974 31.36 33.285 31.745 37.835C36.505 36.4875 38.5 32.865 38.5 26.25V15.75C38.5 7 35 3.5 26.25 3.5ZM21 24.7975C17.535 24.7975 14.735 21.98 14.735 18.515C14.735 15.05 17.535 12.25 21 12.25C24.465 12.25 27.265 15.05 27.265 18.515C27.265 21.98 24.465 24.7975 21 24.7975Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M27.2649 18.515C27.2649 21.98 24.4649 24.7975 20.9999 24.7975C17.5349 24.7975 14.7349 21.98 14.7349 18.515C14.7349 15.05 17.5349 12.25 20.9999 12.25C24.4649 12.25 27.2649 15.05 27.2649 18.515Z" fill="#46B249" stroke="#46B249" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              Smruthi Settlur
+            </span>
+            <button class="poster__text-button btn__green">Buy Subscription</button>
+          </div>
+          <img src="../assets/images/upcoming.png" />
+        </div>
+       </div>
+      </section>
+      <section class="subscribes container">
+       <h1 class="subscribes__title big__title">
+        subscription plans
+       </h1>
+       <div class="subscribes__cards">
+        <div class="subscribes__cards-item">
+          <div class="card__header free">
+            <h5 class="card__header-title">
+              <span class="title-num">1</span>
+              trial session
+            </h5>
+            <span class="card__header-price">free</span>
+          </div>
+          <div class="card__programm">
+            <ul class="programm__list">
+              <li class="programm__list-item available">Warm Up</li>
+              <li class="programm__list-item available">30 min session</li>
+              <li class="programm__list-item">Group Lessons</li>
+              <li class="programm__list-item">Aerobics</li>
+              <li class="programm__list-item">Yoga</li>
+            </ul>
+          </div>
+          <button aria-label="Купить курс" class="card__button default btn__grey">I want it</button>
+        </div>
+        <div class="subscribes__cards-item recommended">
+          <div class="card__header">
+            <span class="recommended__mark">
+              recommended
+            </span>
+            <h5 class="card__header-title">
+              <span class="title-num">12</span>
+              session
+            </h5>
+            <span class="card__header-price">₹12,000</span>
+          </div>
+          <div class="card__programm">
+            <ul class="programm__list">
+              <li class="programm__list-item available">Cardio</li>
+              <li class="programm__list-item available">Warm up</li>
+              <li class="programm__list-item available">Thrice a week</li>
+              <li class="programm__list-item available">Nutrition</li>
+              <li class="programm__list-item available">Couples Included</li>
+            </ul>
+          </div>
+          <button aria-label="Купить курс" class="card__button btn__grey">I want it</button>
+        </div>
+        <div class="subscribes__cards-item">
+          <div class="card__header">
+            <h5 class="card__header-title">
+              <span class="title-num">16</span>
+              session
+            </h5>
+            <span class="card__header-price">₹16,000</span>
+          </div>
+          <div class="card__programm">
+            <ul class="programm__list">
+              <li class="programm__list-item available">Cardio</li>
+              <li class="programm__list-item available">Warm up</li>
+              <li class="programm__list-item available">4 times a week</li>
+              <li class="programm__list-item available">Nutrition</li>
+              <li class="programm__list-item available">Couples Included</li>
+            </ul>
+          </div>
+          <button class="card__button btn__grey">I want it</button>
+        </div>
+        <div class="subscribes__cards-item">
+          <div class="card__header">
+            <h5 class="card__header-title">
+              <span class="title-num">20</span>
+               session
+            </h5>
+            <span class="card__header-price">₹18,000</span>
+          </div>
+          <div class="card__programm">
+            <ul class="programm__list">
+              <li class="programm__list-item available">Cardio</li>
+              <li class="programm__list-item available">Warm Up</li>
+              <li class="programm__list-item available">5 times a week</li>
+              <li class="programm__list-item available">Nutrition</li>
+              <li class="programm__list-item available">Couples Included</li>
+            </ul>
+          </div>
+          <button aria-label="Купить курс" class="card__button btn__grey">I want it</button>
+        </div>
+       </div>
+      </section>
+      <section class="courses">
+        <h1 class="courses__title big__title">courses</h1>
+        <div class="courses__slider">
+         <div class="slider__list">
+         </div>
+         <div class="slider__buttons courses__buttons">
+            <button class="courses__buttons-prev">
+              <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.9999 9.90002C21.9999 10.4537 21.6579 10.9114 21.2142 10.9838L21.0908 10.9938L2.90901 10.9938C2.40693 10.9938 1.99992 10.5041 1.99992 9.90002C1.99992 9.3463 2.34192 8.88868 2.78565 8.81626L2.90901 8.80627L21.0908 8.80627C21.5929 8.80627 21.9999 9.29596 21.9999 9.90002Z" fill="#626262"/>
+                <path d="M10.7923 17.9105C11.2203 18.3368 11.2218 19.0293 10.7956 19.4573C10.4081 19.8465 9.80057 19.8831 9.37171 19.5663L9.24881 19.4607L0.42589 10.6757C0.0355864 10.287 8.01086e-05 9.67728 0.319388 9.24843L0.425826 9.1256L9.24874 0.339138C9.67676 -0.0871126 10.3693 -0.0856788 10.7955 0.342341C11.183 0.731449 11.2171 1.33916 10.8985 1.76668L10.7923 1.88913L2.74812 9.90103L10.7923 17.9105Z" fill="#626262"/>
+                </svg>
+            </button>
+            <div class="courses__current-slide">
+              <span class="courses__current">1</span>
+              <span class="courses__slash">/</span>
+              <span class="courses__all">3</span>
+            </div>
+            <button class="courses__buttons-next">
+              <svg class="arrow-left" width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style type="text/css">
+                  .courses__buttons-next .arrow-left{
+                    transform: rotate(180deg);
+                  }
+                </style>
+                <path d="M21.9999 9.90002C21.9999 10.4537 21.6579 10.9114 21.2142 10.9838L21.0908 10.9938L2.90901 10.9938C2.40693 10.9938 1.99992 10.5041 1.99992 9.90002C1.99992 9.3463 2.34192 8.88868 2.78565 8.81626L2.90901 8.80627L21.0908 8.80627C21.5929 8.80627 21.9999 9.29596 21.9999 9.90002Z" fill="#626262"/>
+                <path d="M10.7923 17.9105C11.2203 18.3368 11.2218 19.0293 10.7956 19.4573C10.4081 19.8465 9.80057 19.8831 9.37171 19.5663L9.24881 19.4607L0.42589 10.6757C0.0355864 10.287 8.01086e-05 9.67728 0.319388 9.24843L0.425826 9.1256L9.24874 0.339138C9.67676 -0.0871126 10.3693 -0.0856788 10.7955 0.342341C11.183 0.731449 11.2171 1.33916 10.8985 1.76668L10.7923 1.88913L2.74812 9.90103L10.7923 17.9105Z" fill="#626262"/>
+                </svg>
+            </button>
+         </div>
+        </div>
+      </section>
+      <section class="newsletter container">
+      <h1 class="newsletter__title big__title">subscribe to newsletter</h1>
+      <span class="newsletter__subtitle">Reduce stress, regain focus,better day. Sculpt your ideal body,free your true self</span>
+      <form id="newsletter__form">
+        <input 
+        aria-label="Ввести адрес электронной почты" 
+        type="email" 
+        name="email" 
+        placeholder="Enter your email address......"
+        />
+        <button title="Подписаться на новости" aria-label="Подписаться на новости" class="newsletter__form-button btn__green">Subscribe</button>
+      </form>
+      <ul class="newsletter__contacts">
+        <li class="contacts__item">
+          <a aria-label="Позвонить"  title="Номер телефона" href="tel:+79678011163">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.41285 0.713869C4.65217 0.879501 4.51107 0.989922 2.52962 2.97751C0.79968 4.70132 0.664721 4.85468 0.462281 5.2841C0.124882 5.9957 0.0451326 6.37605 0.00832537 7.38211C-0.0284818 8.39431 0.0512671 9.06297 0.357994 10.2285C2.20449 17.2403 10.4616 26.4666 18.3629 30.3437C20.7062 31.4908 22.4791 31.9939 24.2213 32C25.2887 32 25.8286 31.8896 26.5709 31.5276C27.0494 31.2945 27.172 31.178 28.8959 29.4603C30.8221 27.5341 30.9325 27.393 31.1779 26.5771C31.3067 26.1477 31.3067 25.3379 31.1779 24.9085C30.9571 24.1723 30.865 24.0619 28.4296 21.6142C27.1475 20.3198 25.9267 19.142 25.7243 18.9948C24.5097 18.1298 22.9454 18.2525 21.927 19.2892C21.6203 19.6021 21.4976 19.7861 21.289 20.283C21.1418 20.6143 20.9516 20.9885 20.8596 21.1112C20.2707 21.9087 19.1419 22.4117 18.1788 22.3136C16.7433 22.1602 14.6024 20.8597 12.7866 19.0439C10.5904 16.8477 9.29601 14.3203 9.60887 12.848C9.7561 12.1609 10.2407 11.4432 10.8112 11.0628C10.9462 10.9647 11.2407 10.8113 11.4615 10.7193C12.0995 10.4494 12.2529 10.3574 12.5535 10.0997C13.5718 9.2102 13.7926 7.54161 13.0503 6.35764C12.8356 6.00797 8.60281 1.7322 8.08751 1.33346C7.6765 1.0206 7.13666 0.775213 6.65203 0.689329C6.19194 0.603447 5.88521 0.609581 5.41285 0.713869Z" fill="white"/>
+              </svg>
+        </a>
+      </li>
+      <li class="contacts__item">
+        <a aria-label="Отправить письмо" title="Электронная почта" href="mailto:novikov.art.1308@gmail.com">
+          <svg width="36" height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5032 0.834122C0.759206 1.25815 -0.335065 3.03634 0.102643 4.72562C0.239427 5.23856 0.492477 5.70363 0.834437 6.05926C1.1422 6.37387 15.7097 16.1197 16.2431 16.3591C17.057 16.7284 18.0213 16.7147 18.8557 16.3249C19.5054 16.0171 33.7788 6.46278 34.1413 6.09346C35.8443 4.35631 34.9141 1.40177 32.4794 0.827283C31.8365 0.676821 3.13241 0.68366 2.5032 0.834122Z" fill="white"/>
+            <path d="M0 16.0734C0 21.6132 0.0205176 24.1505 0.0752311 24.4036C0.328281 25.6072 1.29945 26.5921 2.53734 26.8862C3.18022 27.0366 31.7202 27.0366 32.4383 26.8862C33.683 26.6263 34.6884 25.6278 34.9414 24.4036C35.0303 23.9864 35.0509 8.08524 34.9619 8.12627C34.9346 8.13311 31.6313 10.3353 27.6167 13.0163C23.6021 15.6973 20.1004 18.0021 19.8268 18.132C19.0745 18.515 18.4316 18.6586 17.5083 18.6586C16.585 18.6586 15.9422 18.515 15.1898 18.132C14.9163 18.0021 11.4146 15.6973 7.40001 13.0163C3.3854 10.3353 0.0820703 8.13311 0.0547135 8.12627C0.0205176 8.1126 0 11.6895 0 16.0734Z" fill="white"/>
+            </svg>
+      </a>
+    </li>
+      </ul>
+      </section>
+    </main>
+    <footer class="footer">
+     <div class="footer__container container">
+      <div class="footer__navigation">
+        <nav  aria-label="Контакты"  class="footer__navigation-item">
+          <ul class="footer__contacts">
+            <li class="footer__contacts-item"><a href="#">
+              <svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_19_580)">
+                <circle cx="52.4995" cy="39.5015" r="34.4995" fill="white"/>
+                </g>
+                <path d="M53.953 21.1125C50.4796 21.675 48.2999 23.9039 47.646 27.5742C47.5616 28.0664 47.5264 28.8961 47.5053 31.35L47.4702 34.5H44.8757H42.2811V37.6992V40.8984H44.8827H47.4843V48.9492V57H50.7186H53.953V48.9492V40.8984H56.4491C57.8202 40.8984 58.9452 40.8773 58.9452 40.8562C58.9452 40.8352 59.121 39.4289 59.3319 37.7344C59.5428 36.0398 59.7186 34.6195 59.7186 34.5773C59.7186 34.5211 58.8468 34.5 56.8288 34.5H53.946L53.9671 31.6664C53.9882 29.1633 54.0022 28.8047 54.1147 28.5234C54.3889 27.8203 54.8038 27.4336 55.5491 27.1664C55.9147 27.0328 56.1608 27.0187 58.1225 26.9906L60.2811 26.9625V24.1219C60.2811 21.907 60.26 21.2672 60.1968 21.2461C59.9577 21.1687 58.0944 21.0633 56.4491 21.0352C55.0218 21.007 54.4733 21.0281 53.953 21.1125Z" fill="#48B74A"/>
+                <defs>
+                <filter id="filter0_d_19_580" x="0" y="0.00195312" width="104.999" height="104.999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="13"/>
+                <feGaussianBlur stdDeviation="9"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.0658854 0 0 0 0 0.0730469 0 0 0 0 0.1375 0 0 0 0.08 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_19_580"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_19_580" result="shape"/>
+                </filter>
+                </defs>
+                </svg>              
+            </a>
+          </li>
+          <li class="footer__contacts-item"><a href="#">
+            <svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_19_585)">
+              <circle cx="52.4986" cy="39.4995" r="34.4995" fill="white"/>
+              </g>
+              <g clip-path="url(#clip0_19_585)">
+              <path d="M58.4663 26.2947C55.7569 26.7862 53.612 28.7651 52.9015 31.4479C52.7753 31.9061 52.7487 32.1783 52.7487 33.0947C52.7421 33.699 52.762 34.3166 52.7952 34.476L52.8417 34.7682L52.3968 34.7217C49.4683 34.4561 47.1042 33.7854 44.7468 32.5569C42.5687 31.4213 40.3042 29.635 38.9163 27.9682C38.7038 27.7158 38.5046 27.5233 38.4714 27.5365C38.4315 27.5498 38.2921 27.8154 38.1526 28.1342C37.1964 30.2924 37.3757 32.7826 38.6175 34.7217C38.9827 35.2862 39.5804 35.9569 40.0651 36.342L40.5632 36.7471H40.2909C39.7065 36.7471 38.4913 36.4151 37.8339 36.083C37.6944 36.01 37.5483 35.9502 37.5218 35.9502C37.4288 35.9502 37.5483 37.1654 37.7011 37.7498C38.3054 40.0408 40.0054 41.8537 42.2698 42.6108C42.6417 42.7369 42.9073 42.8565 42.8542 42.8764C42.5554 42.9893 41.5726 43.069 40.8089 43.0424L39.9456 43.0026L39.9921 43.1752C40.0651 43.4674 40.5565 44.3971 40.862 44.8221C42.0308 46.469 43.9499 47.5979 45.8226 47.7506C46.1015 47.7705 46.3339 47.8104 46.3339 47.8436C46.3339 47.9498 44.8464 48.8729 43.9366 49.3244C41.8648 50.3537 39.8128 50.7987 37.4023 50.7455L36.1737 50.719L36.519 50.9381C37.0304 51.2569 38.571 52.0338 39.2616 52.3194C42.987 53.8666 47.3366 54.2186 51.4405 53.3088C57.4769 51.9674 62.4507 47.7705 64.9608 41.8936C66.03 39.3834 66.5679 36.9131 66.6276 34.2569L66.6476 33.0615L67.1323 32.6764C67.7433 32.1783 68.4339 31.5209 68.9585 30.9365C69.4034 30.4319 70.0542 29.5619 70.0144 29.5287C70.0011 29.5154 69.8019 29.5819 69.5694 29.6748C68.6862 30.0334 66.6476 30.5514 66.3421 30.4916C66.2691 30.4783 66.3222 30.4119 66.5148 30.2858C67.0194 29.9537 67.9159 29.0307 68.2944 28.4596C68.6265 27.9682 69.1112 26.992 69.1112 26.8194C69.1112 26.7795 68.7062 26.9522 68.2081 27.1979C67.305 27.6362 66.1296 28.0612 65.2132 28.2803L64.7284 28.3932L64.3233 28.0213C62.7694 26.5803 60.5315 25.9229 58.4663 26.2947Z" fill="#48B74A"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_19_585" x="-0.000946045" y="0" width="104.999" height="104.999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="13"/>
+              <feGaussianBlur stdDeviation="9"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0.0658854 0 0 0 0 0.0730469 0 0 0 0 0.1375 0 0 0 0.08 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_19_585"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_19_585" result="shape"/>
+              </filter>
+              <clipPath id="clip0_19_585">
+              <rect width="34" height="34" fill="white" transform="translate(36.1073 23.001)"/>
+              </clipPath>
+              </defs>
+              </svg>              
+          </a>
+          <li class="footer__contacts-item"><a href="#">
+            <svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_19_590)">
+              <circle cx="52.4976" cy="39.5015" r="34.4995" fill="white"/>
+              </g>
+              <g clip-path="url(#clip0_19_590)">
+              <path d="M46.0426 21.5021C43.6602 21.6032 42.0286 21.9064 40.6497 22.4984C39.3574 23.0543 38.5921 23.5669 37.6391 24.5126C36.354 25.7905 35.5527 27.2272 35.0473 29.1548C34.5997 30.8586 34.4986 32.8151 34.4986 39.9118C34.4986 46.8931 34.5925 48.8713 35.0112 50.5751C36.0508 54.8129 39.1552 57.513 43.7252 58.1411C45.0319 58.3144 47.7753 58.3938 53.0167 58.3938C57.8899 58.3938 60.6982 58.3216 61.9617 58.17C64.5462 57.8668 66.5677 56.9716 68.1632 55.441C69.9609 53.7083 70.9139 51.6363 71.2604 48.6836C71.3976 47.5284 71.3976 32.122 71.2604 31.0318C70.9788 28.8227 70.3219 27.0034 69.2822 25.61C68.7697 24.9169 67.6723 23.8701 66.9864 23.4008C65.4342 22.354 63.5644 21.7764 61.1025 21.5671C59.9402 21.4732 48.0136 21.4227 46.0426 21.5021ZM61.6584 24.9891C63.716 25.2923 64.8711 25.8049 65.9829 26.9095C66.7049 27.6315 67.1019 28.2668 67.4557 29.2486C68.0477 30.9091 68.1055 31.7899 68.1055 39.9479C68.1055 44.6478 68.0766 46.9076 68.0116 47.6656C67.8022 50.1708 67.3041 51.5208 66.1345 52.7698C64.9144 54.0693 63.3911 54.7118 61.0303 54.9284C59.7525 55.0512 49.1903 55.1089 46.7574 55.0078C45.66 54.9645 44.5121 54.8923 44.2017 54.849C42.8372 54.6613 41.516 54.1776 40.693 53.5784C40.1804 53.1957 39.3574 52.3005 39.0541 51.7952C38.4477 50.7844 38.0867 49.3622 37.964 47.5573C37.7474 44.2796 37.8196 33.0316 38.0651 31.169C38.325 29.2414 38.9242 27.9419 40.0577 26.8445C41.2994 25.6389 42.931 25.0541 45.4578 24.8953C46.0065 24.8664 49.6957 24.8447 53.6664 24.8592C59.8247 24.8736 61.0015 24.888 61.6584 24.9891Z" fill="#48B74A"/>
+              <path d="M61.875 28.0719C61.0592 28.4834 60.6694 29.1188 60.6694 30.0573C60.6694 30.7359 60.8282 31.1402 61.2903 31.6023C61.7523 32.0571 62.1566 32.2231 62.8352 32.2231C63.3189 32.2231 63.4778 32.1943 63.8243 32.021C64.5535 31.66 64.965 31.0319 65.0228 30.1945C65.0733 29.4509 64.9073 29.0177 64.3947 28.4979C63.9182 28.0214 63.4994 27.8553 62.7991 27.8553C62.4093 27.8553 62.236 27.8987 61.875 28.0719Z" fill="#48B74A"/>
+              <path d="M51.2914 30.5695C49.3927 30.916 47.7106 31.804 46.2955 33.2263C44.4185 35.0961 43.516 37.2836 43.516 39.9115C43.516 41.4998 43.812 42.8066 44.469 44.1205C46.4905 48.1346 50.9377 50.1921 55.2622 49.1164C56.966 48.6905 58.2799 47.9541 59.5578 46.7195C60.7057 45.6077 61.4782 44.3949 61.9619 42.9437C62.3084 41.8969 62.4384 41.0883 62.4384 39.9115C62.4384 38.742 62.3084 37.9262 61.9691 36.901C61.507 35.5149 60.8356 34.4175 59.7888 33.3346C58.3593 31.8618 56.5761 30.9088 54.6124 30.5623C53.811 30.4251 52.0711 30.4251 51.2914 30.5695ZM54.1504 33.876C57.4569 34.5113 59.6516 37.7601 59.0163 41.0883C58.6265 43.1026 57.1465 44.893 55.255 45.6222C54.3309 45.9831 53.7966 46.0698 52.7281 46.0265C51.9701 45.9976 51.6741 45.9543 51.1759 45.7954C48.9884 45.1024 47.3929 43.3336 46.9453 41.11C46.772 40.2509 46.837 38.9152 47.0969 38.1067C47.7755 35.9552 49.5876 34.3164 51.7463 33.8832C52.3888 33.7533 53.5006 33.7533 54.1504 33.876Z" fill="#48B74A"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_19_590" x="-0.00189209" y="0.00195312" width="104.999" height="104.999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="13"/>
+              <feGaussianBlur stdDeviation="9"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0.0658854 0 0 0 0 0.0730469 0 0 0 0 0.1375 0 0 0 0.08 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_19_590"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_19_590" result="shape"/>
+              </filter>
+              <clipPath id="clip0_19_590">
+              <rect width="36.9639" height="36.9639" fill="white" transform="translate(34.4264 21.4299)"/>
+              </clipPath>
+              </defs>
+              </svg>            
+          </a>
+          <li class="footer__contacts-item"><a href="#">
+            <svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_19_597)">
+              <circle cx="52.4967" cy="39.5015" r="34.4995" fill="white"/>
+              </g>
+              <g clip-path="url(#clip0_19_597)">
+              <path d="M39.5596 23.5859C38.4879 23.8169 37.3905 24.6768 36.9028 25.6651C36.1584 27.186 36.4407 28.97 37.6087 30.1893C39.1489 31.7937 41.7094 31.7937 43.2431 30.1893C44.4175 28.9636 44.6934 27.1924 43.9426 25.6715C43.6025 24.9784 42.8517 24.2276 42.1778 23.9067C41.3308 23.5025 40.4452 23.3934 39.5596 23.5859Z" fill="#48B74A"/>
+              <path d="M59.6842 33.9756C57.7013 34.3543 56.0135 35.4324 54.9739 36.9918L54.6723 37.441L54.653 35.9137L54.6402 34.3928H51.3674H48.0945V45.3664V56.3401H51.4957H54.8969V50.5773C54.8969 46.9964 54.9226 44.545 54.9675 44.0894C55.1857 41.747 56.0584 40.4443 57.7013 40.0079C58.2853 39.8475 59.2735 39.8154 59.8254 39.9374C60.8843 40.162 61.4747 40.6176 61.9239 41.5417C62.5015 42.7482 62.5335 43.1717 62.5335 50.3784V56.3401H65.9347H69.3359V49.7431C69.3359 45.9697 69.3103 42.7674 69.2718 42.254C69.0536 39.2314 68.3926 37.3062 67.0963 35.9201C66.2235 34.9896 65.062 34.3864 63.5026 34.0591C62.6619 33.8858 60.4287 33.8409 59.6842 33.9756Z" fill="#48B74A"/>
+              <path d="M37.0374 34.4377C37.0117 34.4569 36.9925 39.3983 36.9925 45.4113V56.3401H40.4258H43.8591L43.8462 45.3793L43.827 34.4249L40.4514 34.4056C38.5968 34.3992 37.0567 34.412 37.0374 34.4377Z" fill="#48B74A"/>
+              </g>
+              <defs>
+              <filter id="filter0_d_19_597" x="-0.00283813" y="0.00195312" width="104.999" height="104.999" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="13"/>
+              <feGaussianBlur stdDeviation="9"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0.0658854 0 0 0 0 0.0730469 0 0 0 0 0.1375 0 0 0 0.08 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_19_597"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_19_597" result="shape"/>
+              </filter>
+              <clipPath id="clip0_19_597">
+              <rect width="32.8568" height="32.8568" fill="white" transform="translate(36.4791 23.4834)"/>
+              </clipPath>
+              </defs>
+              </svg>            
+          </a>
+        </li>
+          </ul>
+        </nav>
+        <nav aria-label="Дополнительная"  class="footer__navigation-item">
+         <ul class="footer__links">
+          <li class="footer__links-item">
+            <a href="#">
+              Home
+            </a>
+          </li>
+          <li class="footer__links-item">
+            <a href="#">
+              Classes
+            </a>
+          </li>
+          <li class="footer__links-item">
+            <a href="#">
+              Shop
+            </a>
+          </li>
+          <li class="footer__links-item">
+            <a href="#">
+              My Courses
+            </a>
+          </li>
+          <li class="footer__links-item">
+            <a href="#">
+              Pricing
+            </a>
+          </li>
+          <li class="footer__links-item">
+            <a href="#">
+             Contact
+            </a>
+          </li>
+         </ul>
+        </nav>
+      </div>
+     </div>
+     <div class="footer__copyright">
+      <span>© All Rights Reserved – yoga class 2021 – Terms of use</span>
+      </div>
+    </footer>
+</body>
+</html>
